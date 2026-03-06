@@ -1,0 +1,13 @@
+<svg width="100%" height="100%" viewBox="20 200 780 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="mask-D-cutout-black" x="0" y="0" width="960" height="540" maskUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="960" height="540" fill="black" />
+      <text fill="white" font-family="Arial, sans-serif" font-weight="700" font-size="133.333" transform="translate(28.0653 335)">D</text>
+      <path fill="black" d="M0 118.956 3.73434 0 18.6717 0 14.9374 118.956Z" transform="matrix(-0.866002 0.500041 0.500041 0.866002 53.1756 223.459)"/>
+    </mask>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="540" fill="#000000" mask="url(#mask-D-cutout-black)"/>
+  
+  <text fill="#000000" font-family="Arial, sans-serif" font-weight="700" font-size="106.667" transform="translate(124.399 335)">RONEERING</text>
+</svg>
