@@ -229,7 +229,7 @@ const App: React.FC = () => {
             
             <div className="text-sm text-center md:text-right">
               <p className="mb-2">공공 및 산업용 드론 PHM 솔루션 도입 문의</p>
-              <a href="mailto:ceo@droneering.co.kr" className="text-droneering-accent hover:text-white transition-colors">contact@droneering.co.kr</a>
+              <a href="mailto:ceo@droneering.co.kr" className="text-droneering-accent hover:text-white transition-colors">ceo@droneering.co.kr</a>
             </div>
           </div>
           
