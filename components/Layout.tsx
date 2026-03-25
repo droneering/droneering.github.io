@@ -57,11 +57,9 @@ const Layout: React.FC = () => {
 
             <Link to="/impact" className={`hover:text-droneering-accent transition-colors ${location.pathname === '/impact' ? 'text-droneering-accent' : ''}`}>기대 효과</Link>
             <a 
-              href="#contact" 
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-              }}
+              href="https://docs.google.com/forms/d/e/1FAIpQLScUnZ64FtHvsTvd7W-A8FCEWSvT2YnYfDi53UIk-7VaM-HR-g/viewform?usp=publish-editor" 
+              target="_blank"
+              rel="noopener noreferrer"
               className={`px-5 py-2 rounded-full transition-colors shadow-sm cursor-pointer ${scrolled || !isHome ? 'bg-droneering-blue text-white hover:bg-blue-900' : 'bg-white text-droneering-blue hover:bg-gray-100'}`}
             >
               도입 문의
@@ -81,12 +79,10 @@ const Layout: React.FC = () => {
             <Link to="/technology" onClick={() => setMenuOpen(false)} className="text-gray-800 hover:text-droneering-accent transition-colors">제품</Link>
             <Link to="/impact" onClick={() => setMenuOpen(false)} className="text-gray-800 hover:text-droneering-accent transition-colors">기대 효과</Link>
             <a 
-              href="#contact" 
-              onClick={(e) => {
-                e.preventDefault();
-                setMenuOpen(false);
-                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-              }}
+              href="https://docs.google.com/forms/d/e/1FAIpQLScUnZ64FtHvsTvd7W-A8FCEWSvT2YnYfDi53UIk-7VaM-HR-g/viewform?usp=publish-editor" 
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
               className="px-8 py-3 bg-droneering-blue text-white rounded-full shadow-lg cursor-pointer"
             >
               도입 문의
@@ -114,12 +110,23 @@ const Layout: React.FC = () => {
             
             <div className="text-sm text-center md:text-right">
               <p className="mb-2">공공 및 산업용 드론 PHM 솔루션 도입 문의</p>
-              <a href="mailto:contact@droneering.co.kr" className="text-droneering-accent hover:text-white transition-colors">contact@droneering.co.kr</a>
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLScUnZ64FtHvsTvd7W-A8FCEWSvT2YnYfDi53UIk-7VaM-HR-g/viewform?usp=publish-editor" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-2 mt-2 border border-droneering-accent text-droneering-accent hover:bg-droneering-accent hover:text-white rounded-full transition-colors"
+              >
+                도입 문의 작성하기
+              </a>
             </div>
           </div>
           
-          <div className="mt-8 pt-8 border-t border-gray-800 text-xs text-center md:text-left flex flex-col md:flex-row justify-between">
+          <div className="mt-8 pt-8 border-t border-gray-800 text-xs text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
             <p>&copy; 2026 DRONEERING. All rights reserved.</p>
+            <div className="flex items-center gap-4">
+              <Link to="/ai-ethics" className="hover:text-white transition-colors">AI 윤리 준칙</Link>
+              <Link to="/privacy" className="hover:text-white transition-colors">개인정보처리방침</Link>
+            </div>
           </div>
         </div>
       </footer>
